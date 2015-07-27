@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>de.informatica.buildmanagement</groupId>
+  <artifactId>documentation</artifactId>
+  <version>0.5-SNAPSHOT</version>
+
+  <distributionManagement>
+    <repository>
+      <id>informatica</id>
+      <url>http://52.18.220.227:8081/nexus/content/repositories/releases/</url>
+    </repository>
+   <snapshotRepository>
+      <id>informatica</id>
+      <url>http://52.18.220.227:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <dependencies>
+      <dependency>
+          <groupId>com.sun</groupId>
+          <artifactId>tools</artifactId>
+          <version>1.8.0</version>
+          <scope>system</scope>
+          <systemPath>${java.home}/../lib/tools.jar</systemPath>
+      </dependency>
+  </dependencies>
+</project>
