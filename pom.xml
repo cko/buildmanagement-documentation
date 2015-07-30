@@ -5,17 +5,6 @@
   <artifactId>documentation</artifactId>
   <version>0.6-SNAPSHOT</version>
 
-  <distributionManagement>
-    <repository>
-      <id>informatica</id>
-      <url>http://52.18.220.227:8081/nexus/content/repositories/releases/</url>
-    </repository>
-   <snapshotRepository>
-      <id>informatica</id>
-      <url>http://52.18.220.227:8081/nexus/content/repositories/snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <scm>
     <developerConnection>scm:git:https://github.com/cko/buildmanagement-documentation.git</developerConnection>
     <tag>HEAD</tag>
