@@ -2,6 +2,7 @@ package doclets;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.Arrays;
 
 import com.sun.javadoc.*;
 
@@ -55,12 +56,10 @@ public class GlossaryDoclet extends Doclet {
 				printMethod(method);
 			}
 		} else {
-			for (FieldDoc field : clss.fields(false)) {
-				printField(field);
-			}
-			for (MethodDoc method : clss.methods(false)) {
-				printMethod(method);
-			}
+	    Arrays.asList(clss.fields(false)).forEach(field -> printField(field));
+	    for (MethodDoc method : clss.methods(false)) {
+		printMethod(method);
+	    }
 		}
 	}
 

@@ -11,10 +11,22 @@
 	<artifactId>documentation</artifactId>
 	<version>0.8-SNAPSHOT</version>
 
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
 	<scm>
 		<developerConnection>scm:git:https://github.com/cko/buildmanagement-documentation.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
+
+	<repositories>
+		<repository>
+			<id>informatica</id>
+			<url>http://52.18.220.227:8081/nexus/content/repositories/releases/</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
