@@ -57,9 +57,7 @@ public class GlossaryDoclet extends Doclet {
 			}
 		} else {
 	    Arrays.asList(clss.fields(false)).forEach(field -> printField(field));
-	    for (MethodDoc method : clss.methods(false)) {
-		printMethod(method);
-	    }
+	    Arrays.asList(clss.methods(false)).forEach(method -> printMethod(method));
 		}
 	}
 
