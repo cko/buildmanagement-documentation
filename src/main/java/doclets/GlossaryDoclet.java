@@ -10,17 +10,17 @@ public class GlossaryDoclet extends Doclet {
 
 	private static PrintWriter writer;
 
-	public static boolean start(RootDoc root) {
-		try {
-			writer = new PrintWriter("glossary.md");
-			writer.println("# " + "Glossary");
-			process(root);
-			writer.close();
-		} catch (FileNotFoundException e) {
-			
-		}
-		return true;
+    public static boolean start(RootDoc root) {
+	try {
+	    writer = new PrintWriter("glossary.md");
+	    writer.println("# " + "Glossary");
+	    process(root);
+	    writer.close();
+	} catch (FileNotFoundException e) {
+
 	}
+	return true;
+    }
 
 	public static void process(RootDoc root) {
 		final ClassDoc[] classes = root.classes();
