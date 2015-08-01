@@ -17,7 +17,7 @@
 	</properties>
 
 	<scm>
-		<developerConnection>scm:git:https://github.com/cko/buildmanagement-documentation.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:cko/buildmanagement-documentation.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
